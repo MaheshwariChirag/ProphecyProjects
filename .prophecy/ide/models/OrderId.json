@@ -1,0 +1,112 @@
+{
+  "id" : "OrderId",
+  "metainfo" : {
+    "label" : "OrderId",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "OrderId##sh8sKEV1" : {
+      "id" : "OrderId##sh8sKEV1",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "OrderId",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM ids\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Bn4W83vy",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Number"
+              }
+            } ]
+          },
+          "slug" : "ids"
+        } ],
+        "outputs" : [ {
+          "id" : "MgujE0qK",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "LF4F6-WFwzQlfo6Rpbjef" : {
+      "id" : "LF4F6-WFwzQlfo6Rpbjef",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "ids",
+        "slug" : "ids",
+        "x" : -200,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "ids",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "4lAYiivxvRGLZdoBYepx9",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Number"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "yy0NNCSU3MBA2XRN2bPe0$$BHRSw2aknTn8QqXBIY1s5",
+    "source" : "LF4F6-WFwzQlfo6Rpbjef",
+    "sourcePort" : "4lAYiivxvRGLZdoBYepx9",
+    "target" : "OrderId##sh8sKEV1",
+    "targetPort" : "Bn4W83vy"
+  } ],
+  "component" : "Model"
+}
