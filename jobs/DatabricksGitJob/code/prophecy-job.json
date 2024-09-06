@@ -1,0 +1,83 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "6",
+    "jobId" : "jobs/DatabricksGitJob",
+    "name" : "DatabricksGitJob",
+    "schedule" : "0 0/10 * * * ? *",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : true,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "4v-VoOZnRJwud0xHxXX2s$$puJFzj83U-XvSkWku08LB" : {
+      "id" : "4v-VoOZnRJwud0xHxXX2s$$puJFzj83U-XvSkWku08LB",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -600,
+        "y" : -300
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "QErsODxS4irIAupXfWzA0$$qH-0-JVTqixS_CKhW8QaV",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "P5aZHtAa4A5V5N2qAWSiQ$$oLSrz792Xt7-fCrYuDhSt",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "entityId" : null,
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "customVersion" : true,
+        "projectId" : "46",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "entityName" : null,
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "6",
+        "gitEntityValue" : "databricks",
+        "execDeps" : false,
+        "gitEntityValueCommit" : null,
+        "gitEntityValueBranch" : "databricks",
+        "execTest" : true,
+        "currentProjectModels" : [ {
+          "label" : "order_id",
+          "value" : "order_id",
+          "id" : "46/.prophecy/metadata/sqlmodels/order_id",
+          "name" : "order_id"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ]
+}
