@@ -1,0 +1,57 @@
+{
+  "name" : "databricksJobSqlProject",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "fabricId" : "3068",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "ccf",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "nyc_taxi",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ {
+    "name" : "temp",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
+  "frontEndLanguage" : "sql"
+}
