@@ -57,6 +57,7 @@
         "execSeed" : true,
         "execRun" : false,
         "gitEntity" : "branch",
+        "customVersion" : true,
         "projectId" : "14730",
         "runOnlyModel" : "false",
         "loadingModels" : false,
@@ -64,12 +65,17 @@
         "gitEntityValueTag" : null,
         "profile" : "run_profile",
         "sqlFabricId" : "3068",
-        "gitEntityValue" : null,
+        "gitEntityValue" : "databrickJob",
         "execDeps" : false,
         "gitEntityValueCommit" : null,
-        "gitEntityValueBranch" : null,
+        "gitEntityValueBranch" : "databrickJob",
         "execTest" : true,
-        "currentProjectModels" : [ ]
+        "currentProjectModels" : [ {
+          "label" : "temp",
+          "value" : "temp",
+          "id" : "14730/.prophecy/metadata/sqlmodels/temp",
+          "name" : "temp"
+        } ]
       }
     }
   },

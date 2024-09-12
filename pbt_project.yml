@@ -64,13 +64,14 @@ sqlModels:
     files:
     - models/temp.sql
     - .prophecy/ide/models/temp.json
+    - models/schema
     sqlDependencies:
       models: []
       datasets: []
       seeds: []
       sources: []
       snapshots: []
-    createdAt: '2024-09-11 04:56:47'
+    createdAt: '2024-09-12 09:19:03'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
