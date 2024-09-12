@@ -8,7 +8,7 @@
     "editable" : true
   },
   "providerType" : "snowflake",
-  "fabricId" : "7",
+  "fabricId" : "2925",
   "prophecyIDEFolder" : {
     "name" : "",
     "children" : { },
@@ -207,7 +207,7 @@
   "entitiesToSync" : [ {
     "name" : "OrderId",
     "type" : "Model",
-    "syncedOnce" : false
+    "syncedOnce" : true
   } ],
   "frontEndLanguage" : "sql"
 }

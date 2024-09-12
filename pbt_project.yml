@@ -12,7 +12,7 @@ jobs:
   jobs/GitAirflowJob:
     name: GitAirflowJob
     description: ''
-    fabricUID: 8
+    fabricUID: 3699
     scheduler:
       Composer: {}
     cloudProvider: null
@@ -27,14 +27,40 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: false
     createdAt: '2024-09-06 05:12:26'
     author: chirag@prophecy.io
     models: []
     sqlProjects:
-    - '44'
+    - '14729'
+  jobs/dbtJob:
+    name: dbtJob
+    description: ''
+    fabricUID: 3068
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/5 * * * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-09-11 04:54:39'
+    author: chirag@prophecy.io
+    models: []
+    sqlProjects:
+    - '14730'
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -64,6 +90,7 @@ sqlModels:
     files:
     - models/OrderId.sql
     - .prophecy/ide/models/OrderId.json
+    - models/schema.yml
     sqlDependencies:
       models: []
       datasets: []
