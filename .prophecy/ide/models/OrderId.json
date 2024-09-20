@@ -18,7 +18,9 @@
         "x" : 20,
         "y" : 20,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ ],
+        "comment" : "Retrieves all order IDs for processing or analysis.",
+        "autoUpdateComment" : true
       },
       "properties" : {
         "customQueryDisabled" : true,

@@ -1,14 +1,15 @@
+---
 version: 2
-
 models:
-  - name: OrderId
+- name: "OrderId"
+  columns:
+  - name: "ID"
     tests:
-      - is_even:
-          config: { }
-          column_name: "id"
-          accepted_values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
-    columns:
-      - name: id
-        tests:
-          - unique
-          - not_null
+    - unique:
+        config: {}
+    - is_even:
+        config: {}
+        accepted_values: "1"
+    dataType:
+      type: "Number"
+  tests: []

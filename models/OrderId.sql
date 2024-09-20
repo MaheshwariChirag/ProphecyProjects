@@ -6,6 +6,7 @@ WITH ids AS (
 
 )
 
+{#Retrieves all order IDs for processing or analysis.#}
 SELECT *
 
 FROM ids

@@ -204,10 +204,6 @@
     "dependencies" : { },
     "prophecyProjectDependencies" : { }
   },
-  "entitiesToSync" : [ {
-    "name" : "OrderId",
-    "type" : "Model",
-    "syncedOnce" : true
-  } ],
+  "entitiesToSync" : [ ],
   "frontEndLanguage" : "sql"
 }
