@@ -64,7 +64,7 @@ sqlModels:
     files:
     - models/temp.sql
     - .prophecy/ide/models/temp.json
-    - models/schema
+    - models/schema.yml
     sqlDependencies:
       models: []
       datasets: []
@@ -73,7 +73,15 @@ sqlModels:
       snapshots: []
     createdAt: '2024-09-12 09:19:03'
 sqlSnapshots: {}
-sqlTests: {}
+sqlTests:
+  .prophecy/metadata/sqltests/is_even:
+    name: is_even
+    description: null
+    author: chirag@prophecy.io
+    files:
+    - tests/generic/is_even.sql
+    testType: GenericDataTest
+    createdAt: '2024-09-20 10:09:02'
 sqlMacros:
   .prophecy/metadata/sqlmacros/generate_schema_name:
     name: generate_schema_name
