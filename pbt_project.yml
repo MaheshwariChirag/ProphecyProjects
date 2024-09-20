@@ -99,7 +99,15 @@ sqlModels:
       snapshots: []
     createdAt: '2024-09-06 04:43:41'
 sqlSnapshots: {}
-sqlTests: {}
+sqlTests:
+  .prophecy/metadata/sqltests/is_even:
+    name: is_even
+    description: null
+    author: chirag@prophecy.io
+    files:
+    - tests/generic/is_even.sql
+    testType: GenericDataTest
+    createdAt: '2024-09-20 10:03:50'
 sqlMacros:
   .prophecy/metadata/sqlmacros/generate_schema_name:
     name: generate_schema_name
